@@ -1,0 +1,6 @@
+body {}
+
+h1, h2 {}
+
+#wrapper {display:table; width:100%;}
+#content {display:table-cell; vertical-align: middle; text-align: center;}
