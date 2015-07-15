@@ -1,6 +1,40 @@
-body {}
+body {background-image: url("../img/black-paper.png"); color: #333333; font-family: ‘Arial Black’, Gadget, sans-serif;}
 
-h1, h2 {}
+h1 {}
+ul {list-style: none; padding-left: 0;}
+li {padding: 0.75em 0;}
 
-#wrapper {display:table; width:100%;}
-#content {display:table-cell; vertical-align: middle; text-align: center;}
+.error {color: #8B0000;}
+.visibile {visibility: visible;}
+.invisible {visibility: hidden;};
+
+#wrapper {width:100%; margin: 5em 0;}
+#to-do-list {vertical-align: middle; text-align: center; background-color: #fff; max-width: 30em; margin: 0 auto; padding: 0 0 1em;}
+.to-do-title {color: #fff; background-color: #2980B9; display: block; padding: 0.5em 0 0.5em 0; margin: 0 0 0.5em 0; width:100%;}
+li.task-row{border-bottom: 0.063em solid #d4d4d4; padding: 1em 0 2em 1em;}
+li.task-row:first-child {border-top: 0.063em solid #d4d4d4;}
+.task-content {float: left;}
+
+
+/*Buttons
+***********/
+.icon {background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%; height: 32px; width: 32px; border: none; margin-top: -0.5em; cursor: pointer; }
+.btnEdit {float: right; background-image: url(../img/open-iconic/png/pencil-2x.png); }
+.btnRemove { float: right; background-image: url(../img/open-iconic/png/trash-2x.png); }
+.btnSave {color: green; float: right; background-image: url(../img/open-iconic/png/circle-check-2x.png); }
+#btnAdd {color: #fff; background: #22C476; width: auto; height: 44px; }
+#btnAdd:hover {border-color: #00BC62; background: #00BC62;}
+
+/*Input Boxes
+***********/
+input[type="text"] {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  transition: border 0.3s;
+}
+input[type="text"]:focus, input[type="text"].focus {
+  border: solid 5px #969696;
+}
+#inputBox {width:15em; }
+#editBox {border: 2px solid #c9c9c9; margin-top: -0.5em; padding: 5px;}
+
